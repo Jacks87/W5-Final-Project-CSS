@@ -1,0 +1,100 @@
+<!--to start coding, we press shift + 1 and click on the exclamation point-->
+<!--lang=en just means that our language is English-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--we add title-->
+    <title>MTG Management</title>
+
+    <!--we add favicon which is going at the top left corner as an small icon and it can be used as a logo-->
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+
+    <!--Linking CSS style sheet to HTML-->
+    <link rel="stylesheet" href="MTG.css">
+</head>
+
+<!--adding a section-->
+<section>
+    <!--adding navigation that will go inside the box-->
+    <nav>
+    <!--adding a tag called ul which is an element that represents an unordered list of items, like a bulleted list.-->
+      <ul>
+        <!--adding tag li, which represents an item in a list-->
+        <li><a href="inventory.html"> Inventory </a></li>
+        <li><a href="uploadcards.html"> Upload Cards </a></li>
+        <li><a href="https://www.tcgplayer.com/search/magic/product?productLineName=magic&page=1&view=grid"> Market Value </a></li>
+      </ul>
+    </nav>
+
+<body>
+
+    <!--adding first headline with syntax <h1></h1>-->
+    <h1>Home Page</h1>
+
+    <!--the div element to group sections of code that you want to target with CSS-->
+    <!--adding image with syntax <img src=""  and adding width and height-->
+    <!--setting basic margins with class container-->
+    <div class="container">
+
+        <!--making sure the text is at the center using code "class" and then specifying where-->
+        <!--adding a link to another html page so users can create an account or log in-->
+        <!--the syntax <a href=""> </a> helps to add a hyperlink-->
+        <!--Adding aside for the login/sign up link. (it's like saying "a side note")-->
+        <aside>
+            <div class="center"> <a href="MTGLoginSignUp.html"> Log In / Sign Up </a> </div>
+        </aside>
+        <!--adding image with syntax <img src="", adding some text to the image using code "alt"-->
+        <!--adding width and height so the image is positioned all the way to the left-->
+        <img src="redgreen.png" alt="MTG Manager" width="340" height="400">
+
+    </div>
+
+    <!--adding a second section-->
+    <section>
+
+        <div id="container">
+            <img src="cards.jpg" width="230" height="280">
+            <p> TOTAL CARDS UPLOADED </p>
+           </div>
+
+    </section>
+
+    <!--adding a third section-->
+    <section>
+
+        <div class="W3-container">
+            <img src="lotus.jpg" width="200" height="270">
+            <p> YOUR MTG CARD WITH
+                HIGHEST VALUE </p>
+            </div>
+    
+    </section>
+
+    <!--adding a fourth section-->
+    <section>
+
+        <div class="W1-container ">
+            <img src="cards.jpg" width="230" height="280">
+            <p> BUY, SELL, EXCHANGE
+                MTG CARDS </p>
+            </div>
+    
+    </section>   
+
+<!--Adding 3 buttons inside footer-->
+    <footer>
+        <div class="btn-group">
+            <button class="button">About Us</button>
+            <button class="button">Help</button>
+            <button class="button">Contact Us</button>
+        </div>
+      </footer>
+
+</body>
+
+</html>

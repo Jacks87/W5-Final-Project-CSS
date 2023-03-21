@@ -1,0 +1,253 @@
+
+/* adding color and an image to the body of the page */
+/* for the body image, we use syntax: background-image: url(""); */
+/* for the text color, we simply use the syntax: color: ; */
+/* adding margin, justify content to the center and no overflow or hidden (this will avoid an extended page) ; */
+
+
+body{
+    background-image: url("stars.jpg");
+    color:ghostwhite;
+    margin: 2%;
+    justify-content: center;
+    overflow:hidden;
+}
+
+/* modifying the header1 */
+
+h1 {
+    /* adding size to the header */
+    font-size: 30pt;
+    /* adding color to the header */
+    color: white;
+    /* aligning header to the center */
+    text-align: center;
+    /* adding some shadow to header and specifying the dimensions of the shadowing and color. */
+    text-shadow: 2px 2px 5px red;
+  }
+
+  /*making sure aside is transparent and at the top left corner, the text of the link is italic*/
+  aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float:left;
+    font-style: italic;
+    background-color:transparent;
+  }
+
+/*I noticed that my link was dark with the background so I gave it color*/
+/*color with background for when it's just the link and hasn't been clicked on or hover on*/
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+  }
+
+/*color with background for when it's just the link has been visited*/
+a:visited {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+  }
+
+/*color with background for when it's just the link and has been hover on but adding some underline this time*/
+a:hover {
+    color: rgb(251, 255, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/*color with background for when it's just the link is active but adding some underline this time*/
+a:active {
+    color: rgb(0, 255, 55);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/*Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent*/
+
+
+/* Creating column with navigation bar */
+nav {
+    float:right;
+    width: 50%;
+    height: 130px;
+    background:indigo;
+    padding: 10px;
+  }
+  
+  /* Styling the list inside the menu */
+  nav ul {
+    font-size: 20px;
+    color: rgb(234, 0, 255);
+  }
+
+/*container holding image and text*/
+/*modifying and adjusting image*/
+#container {
+    position: absolute;
+    top: 220px;
+    right: 600px;
+  }
+
+/*modifying text with background. Added a p after container to make a difference between image and text*/
+#container p {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+}
+
+.W3-container {
+  position: absolute;
+  top: 220px;
+  right: 350px;
+}
+
+/*modifying text with background. Added a p after container to make a difference between image and text*/
+.W3-container p {
+position: absolute;
+bottom: 20px;
+right: 20px;
+background-color: black;
+color: white;
+}
+
+.W1-container {
+  position: absolute;
+  top: 220px;
+  right: 50px;
+}
+
+/*modifying text with background. Added a p after container to make a difference between image and text*/
+.W1-container p {
+position: absolute;
+bottom: 20px;
+right: 20px;
+background-color: black;
+color: white;
+}
+  
+/* Style the footer */
+footer {
+  background-image: url(fuzz.gif);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/*adding style to the tables*/
+/*adding borders to the table*/
+table{
+  border:2px solid pink;
+  border-collapse: collapse;
+}
+
+/*adding font style to table headers*/
+th{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15pt;
+  color:rgb(62, 255, 62);
+  text-align: center; 
+  vertical-align: middle;
+  border: 1px solid rgb(122, 103, 103);
+  border-radius: 10px;
+}
+
+/*adding font style, size, color, align, and borders to the table rows*/
+tr, td{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20pt;
+  color:rgb(216, 240, 216);
+  text-align: center; 
+  vertical-align: middle;
+  border: 1px solid rgb(122, 103, 103);
+  border-radius: 10px;
+}
+
+/*modifying the container for each inventory*/
+.container1{
+  position: relative;
+  width: 50%;
+}
+
+/*adding images to each inventory front page*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/*specifying when the first image will transition to look transparent*/
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+/*opacity of image once user hovers over the image*/
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+/*adding color, font size and padding to text*/
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 10px;
+  padding: 10px 26px;
+}
+
+/*adding buttons to the footer*/
+.btn-group {
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #000000;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/*adding action after button is clicked on*/
+.btn-group:after {
+  content: "";
+  background: #000000;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+/*this will prevent double borders and to overlap*/
+.btn-group .button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
